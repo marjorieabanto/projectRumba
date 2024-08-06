@@ -11,6 +11,7 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 import com.example.projectrumba.fragments.LogInFragment
+import com.example.projectrumba.fragments.sign_up
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

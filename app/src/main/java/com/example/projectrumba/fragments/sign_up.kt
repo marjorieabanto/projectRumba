@@ -10,29 +10,27 @@ import android.widget.TextView
 import com.example.projectrumba.R
 
 
-class LogInFragment : Fragment() {
+class sign_up : Fragment() {
 
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-      val view= inflater.inflate(R.layout.fragment_log_in, container, false)
 
-        val registrarseEt = view.findViewById<TextView>(R.id.Registrarse)
 
-        registrarseEt.setOnClickListener {
+        val view= inflater.inflate(R.layout.fragment_sign_up, container, false)
+        val haveAnAccountTextView = view.findViewById<TextView>(R.id.haveAnAccount)
+
+        haveAnAccountTextView.setOnClickListener {
             activity?.supportFragmentManager?.beginTransaction()
-                ?.replace(R.id.main, sign_up())
+                ?.replace(R.id.main, LogInFragment())
                 ?.commit()
             activity?.findViewById<FrameLayout>(R.id.main)?.bringToFront()
         }
 
 
-
-    return view
-
+        return view;
     }
 
 

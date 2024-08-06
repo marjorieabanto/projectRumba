@@ -24,8 +24,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
         android:fontFamily="@font/lexend_zetta_thin"
         android:letterSpacing="0.4"
         android:text="RUMBA"
@@ -33,6 +34,8 @@
         android:textColor="#009484"
         android:textColorLink="#009484"
         android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,7 +88,7 @@
         android:fontFamily="@font/inter"
         android:text="¿Todavia no tienes el poder? "
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/IniciarSesion" />
 
     <TextView
         android:id="@+id/Registrarse"
@@ -101,19 +104,19 @@
         app:layout_constraintTop_toBottomOf="@+id/text1" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/IniciarSesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="72dp"
-        android:background="#B3B3B3"
+        android:backgroundTint="#B3B3B3"
         android:text="Iniciar Sesión"
         android:textAllCaps="false"
         android:textColor="#979797"
         android:textColorHighlight="#B3B3B3"
         android:textColorHint="#BCBCBC"
         android:textColorLink="#A1A1A1"
-        app:cornerRadius="8dp"
+        app:cornerRadius="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 

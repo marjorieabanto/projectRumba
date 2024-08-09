@@ -5,4 +5,65 @@
     android:id="@+id/frameLayout4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.PlanesFragment"/>
+    tools:context=".fragments.PlanesFragment">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="299dp"
+        android:layout_height="163dp"
+        android:src="@drawable/reextangle"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="62dp"
+        android:layout_height="20dp"
+        android:src="@drawable/button_gradient"
+        tools:layout_editor_absoluteX="277dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu plan"
+        android:textSize="9dp"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="298dp"
+        android:layout_height="185dp"
+        android:src="@drawable/rec"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="285dp" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="95dp"
+        android:layout_height="27dp"
+        android:src="@drawable/rectangle_102"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="314dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir de nivel"
+        android:textSize="9dp"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="299dp"
+        android:layout_height="183dp"
+        android:src="@drawable/rrr"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="498dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

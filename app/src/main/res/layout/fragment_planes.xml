@@ -8,62 +8,76 @@
     tools:context=".fragments.PlanesFragment">
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/cardMyplan"
         android:layout_width="299dp"
         android:layout_height="163dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="100dp"
         android:src="@drawable/reextangle"
         android:visibility="visible"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/MyplanButton"
         android:layout_width="62dp"
         android:layout_height="20dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginEnd="74dp"
         android:src="@drawable/button_gradient"
-        tools:layout_editor_absoluteX="277dp"
-        tools:layout_editor_absoluteY="119dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="90dp"
         android:text="Tu plan"
         android:textSize="9dp"
-        tools:layout_editor_absoluteX="293dp"
-        tools:layout_editor_absoluteY="121dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/cardUpgrade"
         android:layout_width="298dp"
         android:layout_height="185dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="22dp"
         android:src="@drawable/rec"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="285dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardMyplan" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/UpgradeButton"
         android:layout_width="95dp"
         android:layout_height="27dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="55dp"
         android:src="@drawable/rectangle_102"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="314dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="22dp"
         android:text="Subir de nivel"
         android:textSize="9dp"
-        tools:layout_editor_absoluteX="279dp"
-        tools:layout_editor_absoluteY="321dp" />
+        app:layout_constraintEnd_toEndOf="@+id/UpgradeButton"
+        app:layout_constraintTop_toTopOf="@+id/UpgradeButton" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/djCard"
         android:layout_width="299dp"
         android:layout_height="183dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/rrr"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="498dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardUpgrade" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

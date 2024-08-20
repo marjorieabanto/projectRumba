@@ -67,22 +67,22 @@ class InicioFragment : Fragment() {
 
     private fun openHotspotSettings() {
         try {
-            // Intenta abrir directamente la configuración de hotspot
+
             val intent = Intent(Settings.ACTION_WIRELESS_SETTINGS)
             startActivity(intent)
         } catch (e: Exception) {
             e.printStackTrace()
-            // Si falla, intenta abrir la configuración general de red
+
             val intent = Intent(Settings.ACTION_WIFI_SETTINGS)
             startActivity(intent)
         }
     }
 
     private fun isHotspotEnabled(): Boolean {
-        // Obtener el WifiManager usando el contexto del fragmento
+
         val wifiManager = requireContext().getSystemService(Context.WIFI_SERVICE) as WifiManager
         return try {
-            // Usar reflexión para verificar si el hotspot está habilitado
+
             val method = wifiManager.javaClass.getDeclaredMethod("isWifiApEnabled")
             method.isAccessible = true
             method.invoke(wifiManager) as Boolean
